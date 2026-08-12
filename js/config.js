@@ -6,14 +6,14 @@ window.MOT = window.MOT || {};
 MOT.config = {
   /* Apps Script 웹앱 배포 URL (.../exec)
      결과 스프레드시트 "MOT_고반블랙_점검결과_V2" 에 붙인 스크립트의 배포 주소. */
-  SCRIPT_URL: "",
+  SCRIPT_URL: "https://script.google.com/macros/s/AKfycbxzXZQeVCB2x5gBBUUl3pl-9RVjvoFJXezNb1alo2x1Lyox26Cx8Yy9BnSdbvho1tis/exec",
 
   /* 참고용 시트 주소 (앱 설정 화면 안내에 사용) */
   CHECKLIST_SHEET_URL: "https://docs.google.com/spreadsheets/d/1KadYZXIvRVy2ihjvrd9G3dtcngT5_OWNyrHySlMW-Wk/edit",
   RESULT_SHEET_URL:    "https://docs.google.com/spreadsheets/d/1-7If-U7TPjw7tdKNSSE4hP-Um7Bi1mn5Uno0N1MTxNw/edit",
 
   BRAND: "고반식당 블랙",
-  APP_VERSION: "2.0.0",
+  APP_VERSION: "2.0.1",
 
   /* 등급 컷 (점수 이상이면 해당 등급) */
   GRADE_CUTS: [
@@ -52,6 +52,9 @@ MOT.LS = {
 
 /* 변경 이력 (최신이 위) */
 MOT.CHANGELOG = [
+  { v: "2.0.1", date: "2026-08-12", items: [
+    "구글 시트 연결 완료 — 이제 문항을 시트에서 바로 불러옵니다"
+  ]},
   { v: "2.0.0", date: "2026-08-12", items: [
     "V2 전면 개편 — 체크리스트를 구글 시트에서 직접 불러옵니다. 문항·배점·판정 기준을 시트에서 고치면 앱에 바로 반영됩니다",
     "채점 방식 변경: 감점제 → 획득점수제. '일반' 26문항의 이행 점수 합계가 100점이며, 미흡은 절반, 불이행은 0점입니다",
