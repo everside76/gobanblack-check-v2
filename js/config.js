@@ -13,7 +13,7 @@ MOT.config = {
   RESULT_SHEET_URL:    "https://docs.google.com/spreadsheets/d/1-7If-U7TPjw7tdKNSSE4hP-Um7Bi1mn5Uno0N1MTxNw/edit",
 
   BRAND: "고반식당 블랙",
-  APP_VERSION: "2.0.1",
+  APP_VERSION: "2.0.2",
 
   /* 등급 컷 (점수 이상이면 해당 등급) */
   GRADE_CUTS: [
@@ -52,6 +52,9 @@ MOT.LS = {
 
 /* 변경 이력 (최신이 위) */
 MOT.CHANGELOG = [
+  { v: "2.0.2", date: "2026-11-12", items: [
+    "온라인 점검이력(구글 시트) 조회에 매장 공용 접속코드가 필요합니다 — 처음 한 번 입력하면 이 기기에 기억됩니다"
+  ]},
   { v: "2.0.1", date: "2026-08-12", items: [
     "구글 시트 연결 완료 — 이제 문항을 시트에서 바로 불러옵니다"
   ]},
